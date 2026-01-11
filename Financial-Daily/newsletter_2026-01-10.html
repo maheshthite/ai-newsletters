@@ -48,6 +48,14 @@ body {
 .badge.high { background: #dc3545; color: white; }
 .badge.medium { background: #ffc107; color: #333; }
 .badge.low { background: #28a745; color: white; }
+.badge.monetary { background: #6f42c1; color: white; }
+.badge.economic { background: #17a2b8; color: white; }
+.badge.geopolitical { background: #e83e8c; color: white; }
+.badge.trade { background: #fd7e14; color: white; }
+.badge.commodities { background: #795548; color: white; }
+.badge.earnings { background: #20c997; color: white; }
+.badge.ma { background: #6610f2; color: white; }
+.badge.regulatory { background: #343a40; color: white; }
 .filing-item { border-left-color: #dc3545; }
 .region-item { border-left-color: #17a2b8; }
 .ticker { font-weight: bold; color: #1a5f7a; }
@@ -65,6 +73,15 @@ body {
     overflow-x: auto;
     white-space: pre-wrap;
 }
+.macro-section pre {
+    background: #e8f4f8;
+    padding: 15px;
+    border-radius: 8px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    font-family: monospace;
+    border-left: 4px solid #17a2b8;
+}
 
   </style>
 </head>
@@ -72,7 +89,7 @@ body {
 <div class="header">
   <h1>Financial Daily Briefing</h1>
   <p class="date">January 10, 2026</p>
-  <p class="stats">83 stories | 177 filings</p>
+  <p class="stats">82 stories | 176 filings</p>
 </div>
 <div class="container">
 <div class="section prediction-section">
@@ -87,6 +104,25 @@ body {
 
 </pre>
 </div>
+<div class="section macro-section">
+  <h2>Global Macro Snapshot</h2>
+  <pre>GLOBAL MACRO SNAPSHOT
+──────────────────────────────────────────────────
+&#127482;&#127480; US: GDP 2.8% | CPI 2.9% | Unemployment 4.1%
+&#127466;&#127482; EU: GDP 0.9% | CPI N/A | Unemployment 6.4%
+&#127468;&#127463; GB: GDP 1.1% | CPI 3.3% | Unemployment 4.1%
+&#127464;&#127475; CN: GDP 5.0% | CPI 0.2% | Unemployment 4.6%
+&#127471;&#127477; JP: GDP 0.1% | CPI 2.7% | Unemployment 2.6%
+&#127465;&#127466; DE: GDP -0.5% | CPI 2.3% | Unemployment 3.4%
+&#127470;&#127475; IN: GDP 6.5% | CPI 5.0% | Unemployment 4.2%
+&#127462;&#127482; AU: GDP 1.4% | CPI 3.2% | Unemployment 4.1%
+&#127464;&#127462; CA: GDP 1.6% | CPI 2.4% | Unemployment 6.5%
+&#127463;&#127479; BR: GDP 3.4% | CPI N/A | Unemployment 7.6%
+&#127487;&#127462; ZA: GDP 0.5% | CPI N/A | Unemployment 33.2%
+&#127472;&#127479; KR: GDP N/A | CPI 2.3% | Unemployment 2.6%
+&#127480;&#127462; SA: GDP 2.0% | CPI 1.7% | Unemployment 3.9%
+</pre>
+</div>
 <div class="section filings-section">
   <h2>SEC Filings</h2>
   <h3>Breaking Corporate News (8-K)</h3>
@@ -97,12 +133,12 @@ body {
   </div>
   <div class="item filing-item">
     <h4> <span class="badge high">High</span> 🔴 8-K - Brag House Holdings, Inc.</h4>
-    <p class="summary">Brag House Holdings received a Nasdaq deficiency letter for failing to meet the <strong>$1.00</strong> minimum bid price for <strong>30</strong> consecutive days. They have <strong>180</strong> days to regain compliance.</p>
+    <p class="summary">Brag House Holdings received a Nasdaq deficiency letter for failing to meet the <strong>$1.00</strong> minimum bid price for 30 consecutive days, with 180 days to regain compliance.</p>
     <p class="meta">Filed: Jan 09, 2026 | <a href="https://www.sec.gov/Archives/edgar/data/1903595/000121390026003029/0001213900-26-003029-index.htm" target="_blank">View Full Filing →</a></p>
   </div>
   <div class="item filing-item">
     <h4> <span class="badge high">High</span> 🔴 8-K - Capstone Holding Corp.</h4>
-    <p class="summary">Capstone Holding Corp. received a Nasdaq deficiency letter for failing to meet the <strong>$1.00</strong> minimum bid price requirement for <strong>180 days</strong>. The stock may face delisting if compliance isn&#39;t achieved by July 6, 2026.</p>
+    <p class="summary">Capstone Holding Corp. received a Nasdaq deficiency letter for failing to meet the <strong>$1.00</strong> minimum bid price requirement, with <strong>180 days</strong> to regain compliance.</p>
     <p class="meta">Filed: Jan 09, 2026 | <a href="https://www.sec.gov/Archives/edgar/data/887151/000121390026003008/0001213900-26-003008-index.htm" target="_blank">View Full Filing →</a></p>
   </div>
   <div class="item filing-item">
@@ -112,12 +148,12 @@ body {
   </div>
   <div class="item filing-item">
     <h4> <span class="badge high">High</span> 🟢 8-K - City Office REIT, Inc.</h4>
-    <p class="summary">City Office REIT, Inc. completed its merger, with common stock converted to <strong>$7.00</strong> cash and preferred stock redeemed at <strong>$25.00</strong> plus distributions.</p>
+    <p class="summary">City Office REIT, Inc. completed its merger, with common stock converted to <strong>$7.00</strong> cash and preferred stock redeemed at <strong>$25.00</strong> plus accrued distributions.</p>
     <p class="meta">Filed: Jan 09, 2026 | <a href="https://www.sec.gov/Archives/edgar/data/1593222/000119312526009080/0001193125-26-009080-index.htm" target="_blank">View Full Filing →</a></p>
   </div>
   <div class="item filing-item">
     <h4> <span class="badge high">High</span> 🔴 8-K - Bark, Inc.</h4>
-    <p class="summary">BARK, Inc. received a <strong>$0.90</strong> per share all-cash acquisition proposal from a group of its own stockholders, including the CEO. A special committee will evaluate the offer.</p>
+    <p class="summary">BARK, Inc. received a non-binding proposal from a stockholder group, including the CEO, to acquire the company for <strong>$0.90</strong> per share in an all-cash transaction. A special committee will evaluate the offer.</p>
     <p class="meta">Filed: Jan 09, 2026 | <a href="https://www.sec.gov/Archives/edgar/data/1819574/000162828026001646/0001628280-26-001646-index.htm" target="_blank">View Full Filing →</a></p>
   </div>
   <div class="item filing-item">
@@ -165,180 +201,211 @@ body {
 <div class="section top-stories">
   <h2>Top Financial News</h2>
   <div class="item">
-    <h3><span class="badge watchlist">WATCHLIST</span> <span class="badge high">High</span> <a href="https://finance.yahoo.com/news/nvidia-nvda-gonna-great-q1-194850064.html" target="_blank">NVIDIA (NVDA)’s Gonna Have a Great Q1, Says Jim Cramer</a></h3>
-    <p class="summary"></p>
-    <p class="meta">
-      <span class="source">Yahoo Finance</span>
-      <span class="region">North America</span>
-      <span class="sector">Technology</span>
-      <span class="tickers">NVDA</span>
-      <span class="score">Score: 100</span>
-    </p>
-  </div>
-  <div class="item">
-    <h3> <span class="badge medium">Medium</span> <a href="https://www.sec.gov/Archives/edgar/data/2086524/000121390026002993/0001213900-26-002993-index.htm" target="_blank">S-1/A - K2 Capital Acquisition Corp: IPO/Offering Registration Filed (S-1)</a></h3>
-    <p class="summary">S-1/A - K2 Capital Acquisition Corp filed an S-1 registration statement, typically indicating plans for an initial public offering (IPO) or secondary offering.</p>
-    <p class="meta">
-      <span class="source">SEC EDGAR</span>
-      <span class="region">North America</span>
-      <span class="sector">Financials</span>
-      <span class="score">Score: 100</span>
-    </p>
-  </div>
-  <div class="item">
-    <h3> <span class="badge medium">Medium</span> <a href="https://www.sec.gov/Archives/edgar/data/2088295/000121390026002963/0001213900-26-002963-index.htm" target="_blank">8-K - Bleichroeder Acquisition Corp. II: Material Event Disclosed (8-K)</a></h3>
-    <p class="summary">8-K - Bleichroeder Acquisition Corp. II filed an 8-K report with the SEC, indicating a material corporate event such as earnings results, leadership changes, acquisitions, or other significant developments.</p>
-    <p class="meta">
-      <span class="source">SEC EDGAR</span>
-      <span class="region">North America</span>
-      <span class="sector">Financials</span>
-      <span class="score">Score: 100</span>
-    </p>
-  </div>
-  <div class="item">
-    <h3> <span class="badge medium">Medium</span> <a href="https://www.wsj.com/us-news/law/real-estate-brokerages-avoided-merger-investigation-after-justice-department-rift-e846c797?mod=pls_whats_news_us_business_f" target="_blank">Real-Estate Brokerages Avoided Merger Investigation After Justice Department Rift</a></h3>
-    <p class="summary">Compass hired a Trump-aligned lawyer and won antitrust clearance without a detailed probe that some enforcers wanted.</p>
+    <h3> <span class="badge high">High</span> 🟢 <strong>MRK, RVMD</strong> - <a href="https://www.wsj.com/health/pharma/merck-in-talks-to-buy-revolution-medicines-for-around-30-billion-13f798a1?mod=pls_whats_news_us_business_f" target="_blank">Merck in Talks to Buy Revolution Medicines for Around $30 Billion</a></h3>
+    <p class="summary">Revolution is developing drugs that target a molecular driver of cancers.</p>
     <p class="meta">
       <span class="source">WSJ Markets</span>
-      <span class="region">North America</span>
-      <span class="sector">Real Estate</span>
-      <span class="score">Score: 100</span>
-    </p>
-  </div>
-  <div class="item">
-    <h3> <span class="badge medium">Medium</span> <a href="https://www.sec.gov/Archives/edgar/data/1674356/000110465926002546/0001104659-26-002546-index.htm" target="_blank">S-11/A - Terra Property Trust, Inc.: IPO/Offering Registration Filed (S-1)</a></h3>
-    <p class="summary">S-11/A - Terra Property Trust, Inc. filed an S-1 registration statement, typically indicating plans for an initial public offering (IPO) or secondary offering.</p>
-    <p class="meta">
-      <span class="source">SEC EDGAR</span>
-      <span class="region">North America</span>
-      <span class="sector">Real Estate</span>
-      <span class="score">Score: 100</span>
-    </p>
-  </div>
-  <div class="item">
-    <h3> <span class="badge medium">Medium</span> <a href="https://www.sec.gov/Archives/edgar/data/2079272/000121390026003037/0001213900-26-003037-index.htm" target="_blank">S-1 - Lakewood-Amedex Biotherapeutics Inc.: IPO/Offering Registration Filed (S-1)</a></h3>
-    <p class="summary">S-1 - Lakewood-Amedex Biotherapeutics Inc. filed an S-1 registration statement, typically indicating plans for an initial public offering (IPO) or secondary offering.</p>
-    <p class="meta">
-      <span class="source">SEC EDGAR</span>
       <span class="region">North America</span>
       <span class="sector">Healthcare</span>
       <span class="score">Score: 100</span>
     </p>
   </div>
   <div class="item">
-    <h3> <span class="badge medium">Medium</span> <a href="https://www.sec.gov/Archives/edgar/data/1855509/000173112226000034/0001731122-26-000034-index.htm" target="_blank">S-1 - Twin Vee PowerCats, Co.: IPO/Offering Registration Filed (S-1)</a></h3>
-    <p class="summary">S-1 - Twin Vee PowerCats, Co. filed an S-1 registration statement, typically indicating plans for an initial public offering (IPO) or secondary offering.</p>
+    <h3> <span class="badge high">High</span> 🔴 <strong>SKS</strong> - <a href="https://www.wsj.com/finance/saks-closes-in-on-bankruptcy-financing-package-6407009b?mod=pls_whats_news_us_business_f" target="_blank">Saks Closes In on Bankruptcy Financing Package</a></h3>
+    <p class="summary">A bondholder group is offering $1.25 billion of bankruptcy financing with the aim to take control.</p>
     <p class="meta">
-      <span class="source">SEC EDGAR</span>
+      <span class="source">WSJ Markets</span>
       <span class="region">North America</span>
       <span class="sector">Consumer Discretionary</span>
       <span class="score">Score: 100</span>
     </p>
   </div>
   <div class="item">
-    <h3> <span class="badge medium">Medium</span> <a href="https://www.sec.gov/Archives/edgar/data/1487718/000149315226001147/0001493152-26-001147-index.htm" target="_blank">S-1/A - AMERICAN BATTERY MATERIALS, INC.: IPO/Offering Registration Filed (S-1)</a></h3>
-    <p class="summary">S-1/A - AMERICAN BATTERY MATERIALS, INC. filed an S-1 registration statement, typically indicating plans for an initial public offering (IPO) or secondary offering.</p>
+    <h3> <span class="badge high">High</span> 🟢 <strong>RIO, GLNCY</strong> - <a href="https://www.bloomberg.com/news/articles/2026-01-09/rio-glencore-deal-closer-than-ever-with-premium-and-ceo-in-focus" target="_blank">Rio-Glencore Deal Closer Than Ever With Premium and CEO in Focus</a></h3>
+    <p class="summary">Glencore Plc boss Gary Nagle has called it the most obvious deal in mining. His predecessor and mentor Ivan Glasenberg has been trying to pull it off for nearly two decades. And yet the merger of Glencore with Rio Tinto Group has proven elusive – until now.</p>
     <p class="meta">
-      <span class="source">SEC EDGAR</span>
-      <span class="region">North America</span>
+      <span class="source">Bloomberg Markets</span>
+      <span class="region">Global</span>
       <span class="sector">Materials</span>
       <span class="score">Score: 100</span>
     </p>
   </div>
   <div class="item">
-    <h3> <span class="badge medium">Medium</span> <a href="https://www.sec.gov/Archives/edgar/data/1958489/000175392626000085/0001753926-26-000085-index.htm" target="_blank">S-1/A - Cortigent, Inc.: IPO/Offering Registration Filed (S-1)</a></h3>
-    <p class="summary">S-1/A - Cortigent, Inc. filed an S-1 registration statement, typically indicating plans for an initial public offering (IPO) or secondary offering.</p>
+    <h3> <span class="badge medium">Medium</span> 🟢 <strong>CEG</strong> - <a href="https://finance.yahoo.com/news/constellation-completes-acquisition-calpine-groups-202438651.html" target="_blank">Constellation Completes Acquisition of Calpine; Groups Have 55 GW of Generation Capacity</a></h3>
+    <p class="summary"></p>
     <p class="meta">
-      <span class="source">SEC EDGAR</span>
+      <span class="source">Yahoo Finance</span>
+      <span class="region">North America</span>
+      <span class="sector">Utilities</span>
+      <span class="score">Score: 100</span>
+    </p>
+  </div>
+  <div class="item">
+    <h3> <span class="badge medium">Medium</span> 🔴 <strong>ORCL</strong> - <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxNNURQaTYxTjZFODV6YnFfbjJiX0d3SFhSalFzS3B3WGNtcnM1aGRkU1RCc3NkRU1OZGk4V1oyb0cwZ2NHOU5qdFBJSks4eFRYUjRSZXhYQlo5c2pDV1hQNnVzWkVBRnNJczQxSDJDNHpyNHpublRIM094SERBN3ljTWVTUnJ3UkowVUJELWZUWHNDcHkxdUl5a2VnQW8zVDFZTWJBRW5SSXFTcGpSbG5VMWU1SVJkdw?oc=5" target="_blank">Investor Michael Burry Reveals Options Bet Against Oracle Shares - Bloomberg.com</a></h3>
+    <p class="summary">Investor Michael Burry Reveals Options Bet Against Oracle Shares&#160;&#160;Bloomberg.com</p>
+    <p class="meta">
+      <span class="source">Bloomberg via Google News</span>
       <span class="region">North America</span>
       <span class="sector">Technology</span>
       <span class="score">Score: 100</span>
     </p>
   </div>
   <div class="item">
-    <h3> <span class="badge medium">Medium</span> <a href="https://www.sec.gov/Archives/edgar/data/1827635/000162828026001651/0001628280-26-001651-index.htm" target="_blank">S-1 - Veradermics, Inc: IPO/Offering Registration Filed (S-1)</a></h3>
-    <p class="summary">S-1 - Veradermics, Inc filed an S-1 registration statement, typically indicating plans for an initial public offering (IPO) or secondary offering.</p>
+    <h3> <span class="badge high">High</span> ⚪ <strong>MBS</strong> - <a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxNSVNtdG5TVHdXVDdZNmxlaDhPR0RYQTMwemlNTERyVEFLSmFoZXlDaEhwREpfU0NsWl9rbEtBR2dqV1kyZDMzTGZGR0lKNmg5X0RwOGJlTkFiNlk4UjA3VTE5UG5LeHo4MDE4U01zVl82ZGhqaFFKdTNzd09yckFacFhrMGdNVExUTWRpd0t0ZHFFRk0zSUtMQjdCRURmWm1sdDVxU1FKOG9naXdaSFdqbA?oc=5" target="_blank">Trump’s $200 Billion MBS Order Asserts New Power Over Markets - Bloomberg.com</a></h3>
+    <p class="summary">Trump’s $200 Billion MBS Order Asserts New Power Over Markets&#160;&#160;Bloomberg.com</p>
     <p class="meta">
-      <span class="source">SEC EDGAR</span>
+      <span class="source">Bloomberg via Google News</span>
       <span class="region">North America</span>
-      <span class="sector">Healthcare</span>
+      <span class="sector">Financials</span>
+      <span class="score">Score: 100</span>
+    </p>
+  </div>
+  <div class="item">
+    <h3> <span class="badge low">Low</span> 🟢 <strong>WMT, AZN</strong> - <a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxNUUxnUkREUXFSRnVkS0ZNaWJpUGFLV2Fwck9vX09ETFZiclBreU16Nk9nWEVDZTlvUUgyZFdxV3N0SXozbVlOcGh3TDFjTG5yNEtwMUtBckhoc1Z1czAxTnFLZXlCOUs1ZjBEWmRZWENuNXA2a3hFWmViZUFHWFAyY1pxdzZFdlFwMUFxQnVDcnV5TVJmVzFCZWM5c3A3bWRjM3J1V3pGVjNzRG5O?oc=5" target="_blank">Walmart To Join Nasdaq 100 on Jan. 20 as AstraZeneca Exits - Bloomberg.com</a></h3>
+    <p class="summary">Walmart To Join Nasdaq 100 on Jan. 20 as AstraZeneca Exits&#160;&#160;Bloomberg.com</p>
+    <p class="meta">
+      <span class="source">Bloomberg via Google News</span>
+      <span class="region">North America</span>
+      <span class="sector">Consumer Staples</span>
+      <span class="score">Score: 100</span>
+    </p>
+  </div>
+  <div class="item">
+    <h3> <span class="badge high">High</span> 🔴 <strong>BTC</strong> - <a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxQRmRZY19SQXRQU21VLW5WMS1PellOcUVoeDllVjNCaTNwcnVPLVdUZXZkRGNKR2NOakE5c0REaGZrWHlrOU5jaUdvSjFPNDdYcXA2UmhZVUFMdFdKM21lSHFYTTVsV0lKTk9pX3kyMENnZEp5czlZclA5ZWFIV3AzczJ6RllBWEdxLXd0NUloTWtDQlc3NHk1bW1RQWxpOGZmd1hUSjJIWUFfNEVO?oc=5" target="_blank">Bitcoin Stalls at $90,000 as Markets Await Fed, Tariff News - Bloomberg.com</a></h3>
+    <p class="summary">Bitcoin Stalls at $90,000 as Markets Await Fed, Tariff News&#160;&#160;Bloomberg.com</p>
+    <p class="meta">
+      <span class="source">Bloomberg via Google News</span>
+      <span class="region">Global</span>
+      <span class="sector">Financials</span>
+      <span class="score">Score: 100</span>
+    </p>
+  </div>
+  <div class="item">
+    <h3> <span class="badge high">High</span> 🔴 <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE5JcE9nZUZkejZmM1hVX005TjhjMXpxeTlxS1NoaDhPU0RNdUFyN3IydDN0S1RYZDVmQzJPWmR1YnRmS2NUcnVJQlIxb0dpM0xQUFpDOXprQnBHZ1dEMFNYOXNodC1UdEVwSzRrM0pEdHc?oc=5" target="_blank">US economy undershoots expectations to add just 50,000 jobs in December - Financial Times</a></h3>
+    <p class="summary">US economy undershoots expectations to add just 50,000 jobs in December&#160;&#160;Financial Times</p>
+    <p class="meta">
+      <span class="source">Financial Times via Google News</span>
+      <span class="region">North America</span>
+      <span class="sector">Unknown</span>
+      <span class="score">Score: 100</span>
+    </p>
+  </div>
+  <div class="item">
+    <h3> <span class="badge high">High</span> 🟢 <strong>AVGO</strong> - <a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxQVUxmdGwzeDJrdTZaX29XTjJaOUREaGR3Y2RTSUF3UU9IZWh5czRoMmNCdmNGQU85N29zYnNKNDdRbmJxblB0dklCUlFVaVlJaUx3aTlnMjZKc25RX3pHWVd4TU93MXlUbXJIdVhOdnpqbjRpOWVGWllISFk4RlU1enF5c0VhSVp2SnR3cU9LcXMwekJ3WFdkellfaXE3dGhCcDlPNFFGQU43YUtOZmc?oc=5" target="_blank">S&amp;P 500 notches record high close driven by Broadcom, other chipmakers - Reuters</a></h3>
+    <p class="summary">S&amp;P 500 notches record high close driven by Broadcom, other chipmakers&#160;&#160;Reuters</p>
+    <p class="meta">
+      <span class="source">Reuters via Google News</span>
+      <span class="region">North America</span>
+      <span class="sector">Technology</span>
       <span class="score">Score: 100</span>
     </p>
   </div>
 </div>
-<div class="section watchlist-section">
-  <h2>Watchlist Updates</h2>
-  <div class="item">
-    <h3><a href="https://finance.yahoo.com/news/nvidia-nvda-gonna-great-q1-194850064.html" target="_blank">NVIDIA (NVDA)’s Gonna Have a Great Q1, Says Jim Cramer</a></h3>
-    <p class="summary"></p>
-    <p class="meta">NVDA | Yahoo Finance</p>
-  </div>
-</div>
 <div class="section regional-section">
   <h2>News by Region</h2>
-  <h3>North America (33 stories)</h3>
+  <h3>North America (25 stories)</h3>
   <div class="item region-item">
-    <h4><a href="https://finance.yahoo.com/news/nvidia-nvda-gonna-great-q1-194850064.html" target="_blank">NVIDIA (NVDA)’s Gonna Have a Great Q1, Says Jim Cramer</a></h4>
-    <p class="meta">Yahoo Finance
- | Tickers: NVDA
-</p>
+    <h4><span class="badge high">High</span> <span class="badge ma">M&A</span> 🟢 <strong>MRK, RVMD</strong> - <a href="https://www.wsj.com/health/pharma/merck-in-talks-to-buy-revolution-medicines-for-around-30-billion-13f798a1?mod=pls_whats_news_us_business_f" target="_blank">Merck in Talks to Buy Revolution Medicines for Around $30 Billion</a></h4>
+    <p class="summary">Revolution is developing drugs that target a molecular driver of cancers.</p>
+    <p class="meta">WSJ Markets (USA)</p>
   </div>
   <div class="item region-item">
-    <h4><a href="https://www.sec.gov/Archives/edgar/data/2086524/000121390026002993/0001213900-26-002993-index.htm" target="_blank">S-1/A - K2 Capital Acquisition Corp: IPO/Offering Registration Filed (S-1)</a></h4>
-    <p class="summary">S-1/A - K2 Capital Acquisition Corp filed an S-1 registration statement, typically indicating plans for an initial public offering (IPO) or secondary offering.</p>
-    <p class="meta">SEC EDGAR
-</p>
+    <h4><span class="badge high">High</span>  🔴 <strong>SKS</strong> - <a href="https://www.wsj.com/finance/saks-closes-in-on-bankruptcy-financing-package-6407009b?mod=pls_whats_news_us_business_f" target="_blank">Saks Closes In on Bankruptcy Financing Package</a></h4>
+    <p class="summary">A bondholder group is offering $1.25 billion of bankruptcy financing with the aim to take control.</p>
+    <p class="meta">WSJ Markets (USA)</p>
   </div>
   <div class="item region-item">
-    <h4><a href="https://www.sec.gov/Archives/edgar/data/2088295/000121390026002963/0001213900-26-002963-index.htm" target="_blank">8-K - Bleichroeder Acquisition Corp. II: Material Event Disclosed (8-K)</a></h4>
-    <p class="summary">8-K - Bleichroeder Acquisition Corp. II filed an 8-K report with the SEC, indicating a material corporate event such as earnings results, leadership changes, acquisitions, or other significant develop...</p>
-    <p class="meta">SEC EDGAR
-</p>
+    <h4><span class="badge medium">Medium</span> <span class="badge ma">M&A</span> 🟢 <strong>CEG</strong> - <a href="https://finance.yahoo.com/news/constellation-completes-acquisition-calpine-groups-202438651.html" target="_blank">Constellation Completes Acquisition of Calpine; Groups Have 55 GW of Generation Capacity</a></h4>
+    <p class="meta">Yahoo Finance (USA)</p>
+  </div>
+  <div class="item region-item">
+    <h4><span class="badge medium">Medium</span>  🔴 <strong>ORCL</strong> - <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxNNURQaTYxTjZFODV6YnFfbjJiX0d3SFhSalFzS3B3WGNtcnM1aGRkU1RCc3NkRU1OZGk4V1oyb0cwZ2NHOU5qdFBJSks4eFRYUjRSZXhYQlo5c2pDV1hQNnVzWkVBRnNJczQxSDJDNHpyNHpublRIM094SERBN3ljTWVTUnJ3UkowVUJELWZUWHNDcHkxdUl5a2VnQW8zVDFZTWJBRW5SSXFTcGpSbG5VMWU1SVJkdw?oc=5" target="_blank">Investor Michael Burry Reveals Options Bet Against Oracle Shares - Bloomberg.com</a></h4>
+    <p class="summary">Investor Michael Burry Reveals Options Bet Against Oracle Shares&#160;&#160;Bloomberg.com</p>
+    <p class="meta">Bloomberg via Google News (USA)</p>
+  </div>
+  <div class="item region-item">
+    <h4><span class="badge high">High</span> <span class="badge geopolitical">Geopolitical</span> ⚪ <strong>MBS</strong> - <a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxNSVNtdG5TVHdXVDdZNmxlaDhPR0RYQTMwemlNTERyVEFLSmFoZXlDaEhwREpfU0NsWl9rbEtBR2dqV1kyZDMzTGZGR0lKNmg5X0RwOGJlTkFiNlk4UjA3VTE5UG5LeHo4MDE4U01zVl82ZGhqaFFKdTNzd09yckFacFhrMGdNVExUTWRpd0t0ZHFFRk0zSUtMQjdCRURmWm1sdDVxU1FKOG9naXdaSFdqbA?oc=5" target="_blank">Trump’s $200 Billion MBS Order Asserts New Power Over Markets - Bloomberg.com</a></h4>
+    <p class="summary">Trump’s $200 Billion MBS Order Asserts New Power Over Markets&#160;&#160;Bloomberg.com</p>
+    <p class="meta">Bloomberg via Google News (USA)</p>
+  </div>
+  <h3>Global (6 stories)</h3>
+  <div class="item region-item">
+    <h4><span class="badge high">High</span> <span class="badge ma">M&A</span> 🟢 <strong>RIO, GLNCY</strong> - <a href="https://www.bloomberg.com/news/articles/2026-01-09/rio-glencore-deal-closer-than-ever-with-premium-and-ceo-in-focus" target="_blank">Rio-Glencore Deal Closer Than Ever With Premium and CEO in Focus</a></h4>
+    <p class="summary">Glencore Plc boss Gary Nagle has called it the most obvious deal in mining. His predecessor and mentor Ivan Glasenberg has been trying to pull it off for nearly two decades. And yet the merger of Glen...</p>
+    <p class="meta">Bloomberg Markets (Australia, Switzerland)</p>
+  </div>
+  <div class="item region-item">
+    <h4><span class="badge high">High</span> <span class="badge monetary">Central Bank</span> 🔴 <strong>BTC</strong> - <a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxQRmRZY19SQXRQU21VLW5WMS1PellOcUVoeDllVjNCaTNwcnVPLVdUZXZkRGNKR2NOakE5c0REaGZrWHlrOU5jaUdvSjFPNDdYcXA2UmhZVUFMdFdKM21lSHFYTTVsV0lKTk9pX3kyMENnZEp5czlZclA5ZWFIV3AzczJ6RllBWEdxLXd0NUloTWtDQlc3NHk1bW1RQWxpOGZmd1hUSjJIWUFfNEVO?oc=5" target="_blank">Bitcoin Stalls at $90,000 as Markets Await Fed, Tariff News - Bloomberg.com</a></h4>
+    <p class="summary">Bitcoin Stalls at $90,000 as Markets Await Fed, Tariff News&#160;&#160;Bloomberg.com</p>
+    <p class="meta">Bloomberg via Google News (USA)</p>
+  </div>
+  <div class="item region-item">
+    <h4><span class="badge medium">Medium</span>  🔴 <a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxNOUlvN1dlaS11WUt5T202ZEJXbUVveGQxSm0wYzBFcFpWVGxkVVgxWDdnOW5HNTQzSUJDMXJOSkgtZDNDZDF2YjdSajVTOUlobUVrSGpWbWRORDhGTk5pdE9aWGFyQkh2UjhYcDJjbVlSVjJXUmQ5cVJpcTExcjRVZlZHa05fU1RVRzJNZW5qNGQtc0dxX2NCaGlpYUtEeFlRQ3Y0?oc=5" target="_blank">Commodity Hedge Fund Conductor Capital Closes Down - Bloomberg.com</a></h4>
+    <p class="summary">Commodity Hedge Fund Conductor Capital Closes Down&#160;&#160;Bloomberg.com</p>
+    <p class="meta">Bloomberg via Google News</p>
+  </div>
+  <div class="item region-item">
+    <h4><span class="badge high">High</span> <span class="badge commodities">Commodities</span> 🟢 <a href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxQbUxtaGxyd2l1bFoyWkJZRTlXaDNNOU9vcURubFc2Z0dhdy1pWlVpcmRZWExPcTVtb2dRTXo5T1M3RjBNcy1vR3lLTmk1N2RQZ2VLMGZPZzZ5MndmRU1SVUIzci05Q1dfMER1WnpHMHpIZkljTVFDMjc4WE5MbXo4OWd3aWJVbjFHeE1QN0ZTeU5pM0Y3elk5R1FRaEgxTWJoOGxxNk9FejlEOWJBdGUtaV81TmFURnpYaU5v?oc=5" target="_blank">Oil gains as market weighs Iran, Russia supply risks; dealmaking for Venezuela in focus - Reuters</a></h4>
+    <p class="summary">Oil gains as market weighs Iran, Russia supply risks; dealmaking for Venezuela in focus&#160;&#160;Reuters</p>
+    <p class="meta">Reuters via Google News (Iran, Russia, Venezuela)</p>
+  </div>
+  <div class="item region-item">
+    <h4><span class="badge medium">Medium</span>  🟢 <a href="https://www.cnbc.com/2026/01/09/blackrocks-bull-case-for-bitcoin-access-among-retail-investors.html" target="_blank">BlackRock predicts major shift in retail investors&#39; access to cryptocurrencies</a></h4>
+    <p class="summary">It could be the year Main Street&#39;s appetite for cryptocurrency exposure meaningfully grows.</p>
+    <p class="meta">CNBC Finance</p>
   </div>
   <h3>Latin America (4 stories)</h3>
   <div class="item region-item">
-    <h4><a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxPSVlqc05tRGZqSng4NDY3RWhmOXVvbFY5R0p6bHdMT3Rvclk5S1ZsQ1NnazZnWmRQQmtlVXlxR0htdm82VlJLZXpTWHFISFlyX0RQNlFxVzVhZC1yeWFuaS0yVmdMcHdsLS1ic0NIZUtwdVkwVThYYnV1cmRVaTdld1RNMEs1ZHNKaDFQN2xhdDFyQkpxb0oyOGdwT1VuREJfcVRXY0J5aEFTb3BCVGEyMF9ndHR0clpCUHI1MTZRQnhsVGpZ?oc=5" target="_blank">Brazil&#39;s annual inflation ends 2025 within target range, rate cuts seen ahead - Reuters</a></h4>
-    <p class="summary">Brazil&#39;s annual inflation ends 2025 within target range, rate cuts seen ahead&#160;&#160;Reuters</p>
-    <p class="meta">Reuters via Google News
-</p>
+    <h4><span class="badge medium">Medium</span> <span class="badge geopolitical">Geopolitical</span> ⚪ <a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxPX2JFTjlSVEwtazVYWDFTak1jRWUwTEJJWFN4UFpJaTh5Z05YM1pPQXdJUXZ5Slg1NnhZeFNhcHd4dF9BQlZoR2o3SUJFYnFKQ1RsREdTSUM1VTNEQmJSemZ4ZHQ3QkdaTXRuSkRxV1BGRmNwVnZGcDB6TGxqanNPWmFjcWcza19WejUtS2JULU9tQlotQ293cm1WRFRQT0hGVWtUMUJkMkNXdDZDTl9QaQ?oc=5" target="_blank">We Don’t Need More Oil Today. Venezuela Is a Long Game for Trump - Bloomberg.com</a></h4>
+    <p class="summary">We Don’t Need More Oil Today. Venezuela Is a Long Game for Trump&#160;&#160;Bloomberg.com</p>
+    <p class="meta">Bloomberg via Google News (Venezuela, USA)</p>
   </div>
   <div class="item region-item">
-    <h4><a href="https://www.ft.com/content/4e0eab9d-3195-42f0-add1-661187ce4099" target="_blank">Trump, Venezuela and the doctrine that wouldn’t die</a></h4>
-    <p class="summary">Long seen as defunct, the Monroe Doctrine is being invoked once again as a blueprint for assertive US foreign policy. Historian Greg Grandin charts the rise, fall and rebirth of an ambiguous creed</p>
-    <p class="meta">Financial Times
-</p>
+    <h4><span class="badge high">High</span> <span class="badge geopolitical">Geopolitical</span> 🟢 <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTFBmZFl0bWRYODAxcFQwMkduMklfeFBxNk1UeXJ4czNLc1QwLUdScTg4a0p4S1RKekluRkdSdE94SEV0NUhKRy1ISV85WG9CdDJRbHI1UTRkSEdSbmJJckpqTG5yQmFwRDQwUDllUEJodkQ?oc=5" target="_blank">Argentina repays US financial lifeline as Milei emerges from market crisis - Financial Times</a></h4>
+    <p class="summary">Argentina repays US financial lifeline as Milei emerges from market crisis&#160;&#160;Financial Times</p>
+    <p class="meta">Financial Times via Google News (Argentina, USA)</p>
   </div>
   <div class="item region-item">
-    <h4><a href="https://www.ft.com/content/a269a24a-04ea-4166-a978-bee35f094f08" target="_blank">How special forces became modern warfare’s go-to solution</a></h4>
-    <p class="summary">Pearl-clutching about the Venezuela operation ignores the history of US military strategy</p>
-    <p class="meta">Financial Times
-</p>
-  </div>
-  <h3>Global (2 stories)</h3>
-  <div class="item region-item">
-    <h4><a href="https://www.bloomberg.com/news/articles/2026-01-09/rio-glencore-deal-closer-than-ever-with-premium-and-ceo-in-focus" target="_blank">Rio-Glencore Deal Closer Than Ever With Premium and CEO in Focus</a></h4>
-    <p class="summary">Glencore Plc boss Gary Nagle has called it the most obvious deal in mining. His predecessor and mentor Ivan Glasenberg has been trying to pull it off for nearly two decades. And yet the merger of Glen...</p>
-    <p class="meta">Bloomberg Markets
-</p>
+    <h4><span class="badge medium">Medium</span> <span class="badge trade">Trade</span> 🟢 <a href="https://finance.yahoo.com/news/eu-council-greenlights-historic-eu-203730718.html" target="_blank">The EU Council Greenlights Historic EU-Mercosur Trade Partnership</a></h4>
+    <p class="meta">Yahoo Finance (Brazil, Argentina, Paraguay)</p>
   </div>
   <div class="item region-item">
-    <h4><a href="https://www.ft.com/content/68a173d0-1a9c-489f-9133-a3c4be1dfc4c" target="_blank">Jens-Frederik Nielsen, the Greenlandic leader under pressure</a></h4>
-    <p class="summary">The Arctic island’s 34-year-old prime minister is at the centre of one of the world’s most meaningful geopolitical struggles</p>
-    <p class="meta">Financial Times
-</p>
+    <h4><span class="badge medium">Medium</span> <span class="badge geopolitical">Geopolitical</span> ⚪ <a href="https://www.theglobeandmail.com/business/article-donald-trump-white-house-meeting-oil-executives-venezuela-investments/" target="_blank">Trump promises ‘total safety’ to oil executives if they invest in Venezuela</a></h4>
+    <p class="summary">President also announces meetings with Colombia’s President Gustavo Petro and Venezuelan opposition leader Maria Corina Machado</p>
+    <p class="meta">Globe and Mail Business (Venezuela, Colombia, USA)</p>
   </div>
-  <h3>Asia-Pacific (1 stories)</h3>
+  <h3>Europe (2 stories)</h3>
   <div class="item region-item">
-    <h4><a href="https://www.sec.gov/Archives/edgar/data/1866226/000121390026003038/0001213900-26-003038-index.htm" target="_blank">8-K/A - Evolution Metals &amp; Technologies Corp.: Material Event Disclosed (8-K)</a></h4>
-    <p class="summary">Evolution Metals &amp; Technologies Corp. completed a business combination, acquiring four Korean companies and changing its name. This filing amends a prior 8-K to clarify corporate structure changes.</p>
-    <p class="meta">SEC EDGAR
-</p>
+    <h4><span class="badge medium">Medium</span> <span class="badge earnings">Earnings</span> 🟢 <a href="https://www.wsj.com/business/retail/sainsburys-raises-free-cash-flow-outlook-after-sales-growth-676b753a?mod=pls_whats_news_us_business_f" target="_blank">Sainsbury’s Raises Free-Cash-Flow Outlook After Sales Growth</a></h4>
+    <p class="summary">The British grocer also reaffirmed guidance for retail underlying operating profit after sales rose in the third quarter and Christmas period.</p>
+    <p class="meta">WSJ Markets (UK)</p>
+  </div>
+  <div class="item region-item">
+    <h4><span class="badge high">High</span> <span class="badge earnings">Earnings</span> 🔴 <a href="https://www.wsj.com/business/pandora-sales-growth-disappoints-after-weak-holiday-period-09131828?mod=pls_whats_news_us_business_f" target="_blank">Pandora Sales Growth Disappoints After Weak Holiday Period</a></h4>
+    <p class="summary">Shares were more than 6% lower in Copenhagen after the jeweler said dull consumer sentiment in North America lowered store traffic.</p>
+    <p class="meta">WSJ Markets (Denmark)</p>
+  </div>
+  <h3>Asia-Pacific (2 stories)</h3>
+  <div class="item region-item">
+    <h4><span class="badge medium">Medium</span> <span class="badge trade">Trade</span> 🔴 <a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxNUnk2RUhxZkFpODVCd0NKOGdFbjFQeGdySW9aMng5X2VSUXZwcHBBTTM3SF83Y1BVdEpmSE44TDE3cTNrQThJc0VOdzBCNG1vN2lteTA1Nm9lb0ljRFM0UnVwU2dGNWFJMDd2VXNKVjhUQnVHRDRKV1pObnRmX2Q2T1pOLTZ4Nk4zRDFxNnBZcE9rV0V6a2ZZeXpQWTZJWWFMU3QtYklfRmMxejh6YzdmNw?oc=5" target="_blank">Indian shares log worst week in over 3 months as US tariff worries dent sentiment - Reuters</a></h4>
+    <p class="summary">Indian shares log worst week in over 3 months as US tariff worries dent sentiment&#160;&#160;Reuters</p>
+    <p class="meta">Reuters via Google News (India, USA)</p>
+  </div>
+  <div class="item region-item">
+    <h4><span class="badge high">High</span> <span class="badge economic">Economic</span> 🟢 <a href="https://www.cnbc.com/2026/01/09/china-property-slump-policy-shift-qiushi-2026-ahead-march-meeting.html" target="_blank">Hopes rise for Chinese property support ahead of key March meeting</a></h4>
+    <p class="summary">Ahead of a major policy meeting, China may be reassessing its approach after a flagship journal urged more forceful property measures.</p>
+    <p class="meta">CNBC Finance (China)</p>
+  </div>
+  <h3>Middle East (1 stories)</h3>
+  <div class="item region-item">
+    <h4><span class="badge high">High</span> <span class="badge commodities">Commodities</span> 🟢 <a href="https://finance.yahoo.com/news/crude-oil-settles-sharply-higher-202117790.html" target="_blank">Crude Oil Settles Sharply Higher as Iranian Protests Escalate</a></h4>
+    <p class="meta">Yahoo Finance (Iran)</p>
   </div>
 </div>
 </div>
 <div class="footer">
   <p>Generated by AI News Aggregator | Financial Edition</p>
-  <p>2026-01-10 22:16:41</p>
+  <p>2026-01-10 22:52:06</p>
 </div>
 </body>
 </html>
